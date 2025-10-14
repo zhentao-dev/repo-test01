@@ -1,0 +1,90 @@
+<manifest>
+  <remote fetch="ssh://stone-review/pico" name="origin" pushurl="ssh://stone-review/pico" review="ssh://stone-review/pico"/>
+  <remote fetch="ssh://stone-review" name="stone-review" alias="origin" pushurl="ssh://stone-review" review="ssh://stone-review"/>
+
+  <default remote="origin" revision="emu-35-rom" sync-tags="false" sync-c="true" sync-j="4" />
+
+   <project name="build/make"/>
+  <project name="build/bazel">
+    <linkfile src="toplevel.WORKSPACE" dest="WORKSPACE"/>
+    <linkfile src="toplevel.bazelrc" dest=".bazelrc"/>
+    <linkfile src="toplevel.bazelversion" dest=".bazelversion"/>
+  </project>
+  <project name="tools/buildSrc"/>
+  <project name="external/libslirp"/>
+  <project name="device/generic/goldfish-opengl"/>
+  <project name="device/generic/vulkan-cereal"/>
+  <project name="external/abseil-cpp"/>
+  <project name="external/adt-infra"/>
+  <project name="external/mobly-bundled-snippets"/>
+  <project name="external/angle"/>
+  <project name="external/astc-codec"/>
+  <project name="external/boringssl"/>
+  <project name="external/cares"/>
+  <project name="external/curl"/>
+  <project name="external/dtc"/>
+  <project name="external/deqp"/>
+  <project name="external/fmtlib"/>
+  <project name="external/gfxstream-protocols"/>
+  <project name="external/googletest"/>
+  <project name="external/google-benchmark"/>
+  <project name="external/grpc"/>
+  <project name="external/libusb"/>
+  <project name="external/libpng"/>
+  <project name="external/libxml2"/>
+  <project name="external/lz4"/>
+  <project name="external/protobuf"/>
+  <project name="external/perfetto"/>
+  <project name="external/qemu">
+    <copyfile src="android/vscode/emu.code-workspace" dest="emu.code-workspace"/>
+  </project>
+  <project name="external/regex-re2"/>
+  <project name="external/glib"/>
+  <project name="external/tinyobjloader"/>
+  <project name="external/virglrenderer"/>
+  <project name="external/nasm"/>
+  <project name="external/wpa_supplicant_8"/>
+  <project name="external/zlib"/>
+  <project name="frameworks/native"/>
+  <project name="hardware/google/aemu"/>
+  <project name="hardware/google/gfxstream"/>
+  <project name="prebuilts/android-emulator"/>
+  <project name="prebuilts/android-emulator-build/common"/>
+  <project name="prebuilts/android-emulator-build/mesa"/>
+  <project name="prebuilts/android-emulator-build/mesa-deps"/>
+  <project name="prebuilts/android-emulator-build/qemu-android-deps"/>
+  <project name="prebuilts/android-emulator-build/qt"/>
+  <project name="prebuilts/android-emulator-build/parfait"/>
+  <project name="prebuilts/android-emulator-build/pico-utils"/>
+  <project name="prebuilts/android-emulator-build/system-images"/>
+  <project name="device/google/cuttlefish"/>
+  <project name="tools/netsim"/>
+  <project name="external/google-breakpad"/>
+  <project name="external/crashpad"/>
+  <project name="prebuilts/bazel/linux-x86_64"/>
+  <project name="prebuilts/clang/host/linux-x86"/>
+  <project name="prebuilts/cmake/linux-x86"/>
+  <project name="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8"/>
+  <project name="prebuilts/ninja/linux-x86"/>
+  <project name="prebuilts/python/linux-x86"/>
+  <project name="prebuilts/bazel/windows-x86_64"/>
+  <project name="prebuilts/clang/host/windows-x86"/>
+  <project name="prebuilts/cmake/windows-x86"/>
+  <project name="prebuilts/python/windows-x86"/>
+  <project name="prebuilts/bazel/darwin-x86_64"/>
+  <project name="prebuilts/ninja/darwin-x86"/>
+  <project name="prebuilts/cmake/darwin-x86"/>
+  <project name="prebuilts/clang/host/darwin-x86"/>
+  <project name="prebuilts/python/darwin-x86"/>
+  <project name="prebuilts/studio/jdk"/>
+  <project name="external/tink"/>
+  <project name="external/rapidjson"/>
+  <project name="packages/modules/Bluetooth"/>
+  <project name="external/bison"/>
+  <project name="external/flex"/>
+  <project name="external/m4"/>
+  <project name="external/webrtc"/>
+  <project name="external/flatbuffers"/>
+  <project name="external/mesa3d"/>
+  <project name="tools/repohooks"/>
+</manifest>
