@@ -1,5 +1,5 @@
 <manifest>
-  <remote name="aosp" fetch=".." review="https://android-review.googlesource.com/" />
+  <remote name="aosp" fetch="https://android-review.googlesource.com/" review="https://android-review.googlesource.com/" />
   <default revision="emu-35-6-release" remote="aosp" sync-j="4" />
   <contactinfo bugurl="go/repo-bug" />
   <project path="build/make" name="platform/build" revision="0984226dbac1a947ad34490e0647cf7e5c5e6d14" upstream="emu-35-6-release" />
