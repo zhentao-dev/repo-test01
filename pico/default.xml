@@ -10,5 +10,6 @@ For more information on repo manifests, check out:
 https://gerrit.googlesource.com/git-repo/+/HEAD/docs/manifest-format.md
 -->
 <manifest>
-  <include name="pico/emu-35-rom.xml" />
+  <include name="emu-35-6-release.xml" />
+  <include name="emu-35-rom.xml" />
 </manifest>
