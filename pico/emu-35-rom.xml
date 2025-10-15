@@ -1,11 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!-- The manifest file based on emu-35-6-release -->
   <include name="pico/emu-35-6-release.xml" />
-  <remove-project name="platform/external/crashpad" />
   <remove-project name="platform/external/qemu" />
   <remove-project name="platform/hardware/google/aemu" />
   <remove-project name="platform/hardware/google/gfxstream" />
   <remove-project name="platform/prebuilts/android-emulator-build/common" />
 
-  <remote name="pico" fetch="git@github.com:zhentao-dev" review="git@github.com:zhentao-dev/" />
-  <project path="demo2" name="test02_demo.git" remote="pico" revision="main"/>
+  <!-- Pull the modified repositories from the pico branch -->
+  <remote alias="aosp" fetch="ssh://stone-review/pico" name="pico" />
+  <project name="external/qemu" remote="pico" revision="emu-35-rom-opensource">
+    <copyfile src="android/vscode/emu.code-workspace" dest="emu.code-workspace" />
+  </project>
+  <project name="hardware/google/aemu" remote="pico" revision="emu-35-rom-opensource" />
+  <project name="hardware/google/gfxstream" remote="pico" revision="emu-35-rom-opensource" />
+  <project name="prebuilts/android-emulator-build/common" remote="pico" revision="emu-35-rom-opensource" />
 </manifest>
