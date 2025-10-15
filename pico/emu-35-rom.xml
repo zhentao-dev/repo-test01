@@ -7,5 +7,5 @@
   <remove-project name="platform/prebuilts/android-emulator-build/common" />
 
   <remote name="pico" fetch="git@github.com:zhentao-dev" review="git@github.com:zhentao-dev/" />
-  <project path="tools/buildSrc" name="test02_demo.git" remote="pico" revision="main"/>
+  <project path="demo2" name="test02_demo.git" remote="pico" revision="main"/>
 </manifest>
