@@ -1,4 +1,5 @@
 <manifest>
+  <include name="emu-35-6-release.xml" />
   <remove-project name="platform/external/crashpad" />
   <remove-project name="platform/external/qemu" />
   <remove-project name="platform/hardware/google/aemu" />
