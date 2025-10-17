@@ -1,23 +1,8 @@
-### PICO Emulator Manifest
-
-Welcome to the PICO Emulator Manifest repository! This repository is designed to facilitate the setup and management of the PICO Emulator development environment.
-
-#### Table of Contents
-<hr style="height:1px; background-color:#e5e5e5;margin: 5px;>
-
-- [PICO Emulator Manifest](#pico-emulator-manifest)
-  - [Table of Contents](#table-of-contents)
-  - [Project Overview](#project-overview)
-  - [Repository Structure](#repository-structure)
-  - [Getting Started](#getting-started)
-  - [Building the Emulator](#building-the-emulator)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
-  - [Contact](#contact)
-
 #### Project Overview
 
-The PICO Emulator is based on Google's open-source Android Open Source Project (AOSP) and aims to provide a robust environment for testing and development. This repository contains the manifest file needed to initialize the repository and access the modified code.
+The Pico emulator is a tool developed based on Google's open-source project AOSP, designed to replicate the PICO system's operating environment for use on PCs, including Windows, macOS, and Linux platforms. Its primary advantage is the elimination of reliance on physical PICO devices, making it ideal for a range of applications, including development, testing, and everyday usage.
+
+Developer Instructions: [PICO Swan Emulator User Guide](https://developer-cn.picoxr.com/document/unity/pico-emulator/)
 
 #### Repository Structure
 
@@ -35,7 +20,6 @@ The PICO Emulator is based on Google's open-source Android Open Source Project (
   - **emu-35-rom.xml**: The modified manifest specifically for the PICO Emulator.
 - **README.md**: This file providing information about the project.
 
-
 #### Getting Started
 
 To initialize the repository and download the necessary code, execute the following command in your terminal:
@@ -45,20 +29,18 @@ repo init -g all -u https://github.com/Pico-Developer/PICO-Emulator-manifest.git
 ~~~
 
 #### Building the Emulator
-For Windows:
-https://android.googlesource.com/platform/external/qemu/+/refs/heads/emu-master-dev/android/docs/WINDOWS-DEV.md
+- For Windows, see the [Android Emulator Windows Development](https://android.googlesource.com/platform/external/qemu/+/refs/heads/emu-master-dev/android/docs/WINDOWS-DEV.md)
 
-For Linux:
-https://android.googlesource.com/platform/external/qemu/+/refs/heads/emu-master-dev/android/docs/LINUX-DEV.md
+- For Linux, see the [Android Emulator Linux Development](https://android.googlesource.com/platform/external/qemu/+/refs/heads/emu-master-dev/android/docs/LINUX-DEV.md)
 
-For Macos:
-https://android.googlesource.com/platform/external/qemu/+/refs/heads/emu-master-dev/android/docs/DARWIN-DEV.md
+- For MacOS, see the [Android Emulator MacOS Development](https://android.googlesource.com/platform/external/qemu/+/refs/heads/emu-master-dev/android/docs/DARWIN-DEV.md)
 
 #### License
 This project is licensed under the GPLv2 License. See the LICENSE file for details.
 
 #### Acknowledgments
-We would like to express our gratitude to Google for their contributions to the Android Open Source Project (AOSP). Their work has laid the foundation for the development of the PICO Emulator and many other projects within the open-source community.
+
+This project acknowledges Google's substantial contributions to the AOSP, which have established a strong foundation for the PICO Emulator. We also express our gratitude to all contributors and stakeholders who support open-source initiatives, as their efforts are vital for advancing technology and fostering collaboration.
 
 #### Contact
 For questions or suggestions, please contact us through GitHub Issues.
