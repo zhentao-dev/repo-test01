@@ -1,4 +1,4 @@
-#### Project Overview
+#### Overview
 
 The Pico emulator is a tool developed based on Google's open-source project AOSP, designed to replicate the PICO system's operating environment for use on PCs, including Windows, macOS, and Linux platforms. Its primary advantage is the elimination of reliance on physical PICO devices, making it ideal for a range of applications, including development, testing, and everyday usage.
 
@@ -36,7 +36,7 @@ repo init -g all -u https://github.com/Pico-Developer/PICO-Emulator-manifest.git
 - For MacOS, see the [Android Emulator MacOS Development](https://android.googlesource.com/platform/external/qemu/+/refs/heads/emu-master-dev/android/docs/DARWIN-DEV.md)
 
 #### License
-This project is licensed under the GPLv2 License. See the LICENSE file for details.
+This project is licensed under the GPLv2 License. See the [LICENSE](./LICENSE) file for details.
 
 #### Acknowledgments
 
